@@ -1,0 +1,11 @@
+(
+	result_sig
+) = mux3	(
+	.clock = clock_sig,
+	.data1 = data1_sig,
+	.data0 = data0_sig,
+	.sel = sel_sig
+)
+RETURNS (
+	.result
+);

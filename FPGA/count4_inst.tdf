@@ -1,0 +1,10 @@
+(
+	q_sig[]
+) = count4	(
+	.clock = clock_sig,
+	.clk_en = clk_en_sig,
+	.sset = sset_sig
+)
+RETURNS (
+	.q[]
+);

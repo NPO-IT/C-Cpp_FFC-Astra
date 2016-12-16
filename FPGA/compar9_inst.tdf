@@ -1,0 +1,8 @@
+(
+	AeB_sig
+) = compar9	(
+	.dataa[] = dataa_sig[]
+)
+RETURNS (
+	.AeB
+);

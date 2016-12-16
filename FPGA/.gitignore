@@ -1,3 +1,28 @@
+/project.asm.rpt
+/project.done
+/project.eda.rpt
+/project.fit.rpt
+/project.flow.rpt
+/project.map.rpt
+/project.map.smsg
+/project.tan.rpt
+/project_nativelink_simulation.rpt
+/serv_req_info.txt
+*.pcb
+*.sch
+*.cnf
+*.DLS
+*.qws
+*.v.bak
+*.vhd.bak
+**/db/*
+**/incremental_db/*
+**/simulation/*
+**/greybox_tmp/*
+*.kpt
+*.ddb
+
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
@@ -45,5 +70,3 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
-разводка ЯФК.pcb
-схема ЯФК.sch
