@@ -1,0 +1,128 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+D:\work\SKUT_SSP\SKUT_SSP.uvproj
+Project File Date:  04/20/2011
+
+<h2>Output:</h2>
+Build target 'Target 1'
+assembling LPC2300.s...
+compiling main.cpp...
+timer.h(6): warning:  #1295-D: Deprecated declaration timer_init - give arg types
+timer.h:   void timer_init();
+timer.h:        ^
+timer.h(7): warning:  #1295-D: Deprecated declaration timer_clr - give arg types
+timer.h:   void timer_clr();
+timer.h:        ^
+timer.h(8): warning:  #1295-D: Deprecated declaration timer_hand - give arg types
+timer.h:   void timer_hand() __irq;
+timer.h:        ^
+timer.h(9): warning:  #1295-D: Deprecated declaration timer_start - give arg types
+timer.h:   void timer_start();
+timer.h:        ^
+timer.h(10): warning:  #1295-D: Deprecated declaration timer_stop - give arg types
+timer.h:   void timer_stop();
+timer.h:        ^
+timer.h(14): warning:  #1295-D: Deprecated declaration UART_SUMULATE_INIT - give arg types
+timer.h:   void UART_SUMULATE_INIT();
+timer.h:        ^
+timer.h(15): warning:  #1295-D: Deprecated declaration SEND_QUERY_SIM - give arg types
+timer.h:   void SEND_QUERY_SIM();
+timer.h:        ^
+timer.h(16): warning:  #1295-D: Deprecated declaration RCV_DATA_SIM - give arg types
+timer.h:   void RCV_DATA_SIM() __irq;
+timer.h:        ^
+main.cpp(106): warning:  #61-D: integer operation result is out of range
+main.cpp:               GPDMA_CH0_CTRL = (FRAME_SIZE) | (0x0 << 12) | (0x0<< 15)|(0<<18)|(0<<21)| (1 << 26)|(1<<31);    
+main.cpp:                                                                                                       ^
+main.cpp(118): warning:  #111-D: statement is unreachable
+main.cpp:       return 0;
+main.cpp:       ^
+main.cpp(119): warning:  #1-D: last line of file ends without a newline
+main.cpp:   }
+main.cpp:    ^
+main.cpp: main.cpp: 11 warnings, 0 errors
+compiling ssp.c...
+ssp.c(32): warning:  #1-D: last line of file ends without a newline
+ssp.c:   }
+ssp.c:    ^
+ssp.c: ssp.c: 1 warning, 0 errors
+compiling uart.c...
+compiling timer.c...
+timer.h(6): warning:  #1295-D: Deprecated declaration timer_init - give arg types
+timer.h:   void timer_init();
+timer.h:        ^
+timer.h(7): warning:  #1295-D: Deprecated declaration timer_clr - give arg types
+timer.h:   void timer_clr();
+timer.h:        ^
+timer.h(8): warning:  #1295-D: Deprecated declaration timer_hand - give arg types
+timer.h:   void timer_hand() __irq;
+timer.h:        ^
+timer.h(9): warning:  #1295-D: Deprecated declaration timer_start - give arg types
+timer.h:   void timer_start();
+timer.h:        ^
+timer.h(10): warning:  #1295-D: Deprecated declaration timer_stop - give arg types
+timer.h:   void timer_stop();
+timer.h:        ^
+timer.h(14): warning:  #1295-D: Deprecated declaration UART_SUMULATE_INIT - give arg types
+timer.h:   void UART_SUMULATE_INIT();
+timer.h:        ^
+timer.h(15): warning:  #1295-D: Deprecated declaration SEND_QUERY_SIM - give arg types
+timer.h:   void SEND_QUERY_SIM();
+timer.h:        ^
+timer.h(16): warning:  #1295-D: Deprecated declaration RCV_DATA_SIM - give arg types
+timer.h:   void RCV_DATA_SIM() __irq;
+timer.h:        ^
+timer.c(74): warning:  #177-D: variable "DATA" was declared but never referenced
+timer.c:        const byte DATA[37][8]={
+timer.c:                   ^
+timer.c(84): warning:  #1-D: last line of file ends without a newline
+timer.c:   }
+timer.c:    ^
+timer.c: timer.c: 10 warnings, 0 errors
+linking...
+Program Size: Code=2652 RO-data=48 RW-data=64 ZI-data=2712  
+FromELF: creating hex file...
+".\obj\SKUT_SSP.axf" - 0 Error(s), 22 Warning(s).
+Build target 'Target 1'
+compiling main.cpp...
+timer.h(6): warning:  #1295-D: Deprecated declaration timer_init - give arg types
+timer.h:   void timer_init();
+timer.h:        ^
+timer.h(7): warning:  #1295-D: Deprecated declaration timer_clr - give arg types
+timer.h:   void timer_clr();
+timer.h:        ^
+timer.h(8): warning:  #1295-D: Deprecated declaration timer_hand - give arg types
+timer.h:   void timer_hand() __irq;
+timer.h:        ^
+timer.h(9): warning:  #1295-D: Deprecated declaration timer_start - give arg types
+timer.h:   void timer_start();
+timer.h:        ^
+timer.h(10): warning:  #1295-D: Deprecated declaration timer_stop - give arg types
+timer.h:   void timer_stop();
+timer.h:        ^
+timer.h(14): warning:  #1295-D: Deprecated declaration UART_SUMULATE_INIT - give arg types
+timer.h:   void UART_SUMULATE_INIT();
+timer.h:        ^
+timer.h(15): warning:  #1295-D: Deprecated declaration SEND_QUERY_SIM - give arg types
+timer.h:   void SEND_QUERY_SIM();
+timer.h:        ^
+timer.h(16): warning:  #1295-D: Deprecated declaration RCV_DATA_SIM - give arg types
+timer.h:   void RCV_DATA_SIM() __irq;
+timer.h:        ^
+main.cpp(106): warning:  #61-D: integer operation result is out of range
+main.cpp:               GPDMA_CH0_CTRL = (FRAME_SIZE) | (0x0 << 12) | (0x0<< 15)|(0<<18)|(0<<21)| (1 << 26)|(1<<31);    
+main.cpp:                                                                                                       ^
+main.cpp(118): warning:  #111-D: statement is unreachable
+main.cpp:       return 0;
+main.cpp:       ^
+main.cpp(119): warning:  #1-D: last line of file ends without a newline
+main.cpp:   }
+main.cpp:    ^
+main.cpp: main.cpp: 11 warnings, 0 errors
+linking...
+Program Size: Code=2652 RO-data=48 RW-data=64 ZI-data=2712  
+FromELF: creating hex file...
+".\obj\SKUT_SSP.axf" - 0 Error(s), 11 Warning(s).

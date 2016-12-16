@@ -1,0 +1,26 @@
+#include "emc.h"
+#include <lpc23xx.h>
+
+void InitEMC(){
+	//????????? EMC	
+	PCONP   |= 0x00000800;		/* Turn On EMC PCLK */ 
+	//EMC_CTRL = 0x00000001;  	//?????????
+  	PINSEL4  = 0x50000000;
+  	PINSEL5  = 0x05050555;
+  	PINSEL6  = 0x55555555;
+  	PINSEL8  = 0x55555555;
+  	PINSEL9  = 0x40050000; 
+
+	//PINSEL::Set(4,30,func_00);
+	EMC_STA_CFG1 = 0x80;
+ 	EMC_STA_WAITWEN1 = 0x2;
+ 	EMC_STA_WAITOEN1 = 0x2;
+ 	EMC_STA_WAITRD1 = 0x1f;
+ 	EMC_STA_WAITPAGE1 = 0x1f;
+ 	EMC_STA_WAITWR1 = 0x1f;
+ 	EMC_STA_WAITTURN1 = 0x0f;
+
+	BANK_PORT[DIR]=BANK_HASH[7];
+	BANK_PORT[CLR]=BANK_HASH[7];
+}
+

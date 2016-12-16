@@ -1,0 +1,179 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+D:\work\tst\tst.uvproj
+Project File Date:  08/31/2011
+
+<h2>Output:</h2>
+Build target 'Target 1'
+assembling LPC2300.s...
+linking...
+tst.axf: Warning: L6665W: Neither Lib$$Request$$armlib Lib$$Request$$cpplib defined, not searching ARM libraries.
+tst.axf: Error: L6411E: No compatible library exists with a definition of startup symbol __main.
+tst.axf: Not enough information to list image symbols.
+tst.axf: Not enough information to list the image map.
+tst.axf: Finished: 2 information, 1 warning and 1 error messages.
+Target not created
+Build target 'Target 1'
+compiling main.cpp...
+./../my_lib/uart.h(22): warning:  #375-D: declaration requires a typedef name
+./../my_lib/uart.h:   };
+./../my_lib/uart.h:    ^
+./../my_lib/uart.h(43): warning:  #815-D: type qualifier on return type is meaningless
+./../my_lib/uart.h:             const uint GetState() const;
+./../my_lib/uart.h:             ^
+./../my_lib/uart.h(44): warning:  #815-D: type qualifier on return type is meaningless
+./../my_lib/uart.h:             const uint GetIntStatus() const;
+./../my_lib/uart.h:             ^
+main.cpp(25): error:  #20: identifier "u_opt" is undefined
+main.cpp:       uart2->Init(&u_opt);
+main.cpp:                    ^
+main.cpp: main.cpp: 3 warnings, 1 error
+compiling fastport.cpp...
+compiling pinsel.cpp...
+compiling uart.cpp...
+..\my_lib\uart.h(22): warning:  #375-D: declaration requires a typedef name
+..\my_lib\uart.h:   };
+..\my_lib\uart.h:    ^
+..\my_lib\uart.h(43): warning:  #815-D: type qualifier on return type is meaningless
+..\my_lib\uart.h:               const uint GetState() const;
+..\my_lib\uart.h:               ^
+..\my_lib\uart.h(44): warning:  #815-D: type qualifier on return type is meaningless
+..\my_lib\uart.h:               const uint GetIntStatus() const;
+..\my_lib\uart.h:               ^
+..\my_lib\uart.cpp(44): warning:  #815-D: type qualifier on return type is meaningless
+..\my_lib\uart.cpp:   const uint UART::GetState() const{
+..\my_lib\uart.cpp:   ^
+..\my_lib\uart.cpp(72): warning:  #815-D: type qualifier on return type is meaningless
+..\my_lib\uart.cpp:   const uint UART::GetIntStatus() const{
+..\my_lib\uart.cpp:   ^
+..\my_lib\uart.cpp(89): warning:  #1-D: last line of file ends without a newline
+..\my_lib\uart.cpp:                                                                                                              
+..\my_lib\uart.cpp:                                                                                                              ^
+..\my_lib\uart.cpp: ..\my_lib\uart.cpp: 6 warnings, 0 errors
+compiling vic.cpp...
+Target not created
+Build target 'Target 1'
+compiling main.cpp...
+./../my_lib/uart.h(22): warning:  #375-D: declaration requires a typedef name
+./../my_lib/uart.h:   };
+./../my_lib/uart.h:    ^
+./../my_lib/uart.h(43): warning:  #815-D: type qualifier on return type is meaningless
+./../my_lib/uart.h:             const uint GetState() const;
+./../my_lib/uart.h:             ^
+./../my_lib/uart.h(44): warning:  #815-D: type qualifier on return type is meaningless
+./../my_lib/uart.h:             const uint GetIntStatus() const;
+./../my_lib/uart.h:             ^
+./../my_lib/uart.h: main.cpp: 3 warnings, 0 errors
+linking...
+Program Size: Code=2564 RO-data=64 RW-data=48 ZI-data=1400  
+"tst.axf" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+assembling LPC2300.s...
+linking...
+Program Size: Code=2564 RO-data=64 RW-data=48 ZI-data=1400  
+"tst.axf" - 0 Error(s), 0 Warning(s).
+Clean started: Project: 'tst'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling LPC2300.s...
+compiling main.cpp...
+./../my_lib/uart.h(22): warning:  #375-D: declaration requires a typedef name
+./../my_lib/uart.h:   };
+./../my_lib/uart.h:    ^
+./../my_lib/uart.h(43): warning:  #815-D: type qualifier on return type is meaningless
+./../my_lib/uart.h:             const uint GetState() const;
+./../my_lib/uart.h:             ^
+./../my_lib/uart.h(44): warning:  #815-D: type qualifier on return type is meaningless
+./../my_lib/uart.h:             const uint GetIntStatus() const;
+./../my_lib/uart.h:             ^
+./../my_lib/uart.h: main.cpp: 3 warnings, 0 errors
+compiling fastport.cpp...
+compiling pinsel.cpp...
+compiling uart.cpp...
+..\my_lib\uart.h(22): warning:  #375-D: declaration requires a typedef name
+..\my_lib\uart.h:   };
+..\my_lib\uart.h:    ^
+..\my_lib\uart.h(43): warning:  #815-D: type qualifier on return type is meaningless
+..\my_lib\uart.h:               const uint GetState() const;
+..\my_lib\uart.h:               ^
+..\my_lib\uart.h(44): warning:  #815-D: type qualifier on return type is meaningless
+..\my_lib\uart.h:               const uint GetIntStatus() const;
+..\my_lib\uart.h:               ^
+..\my_lib\uart.cpp(44): warning:  #815-D: type qualifier on return type is meaningless
+..\my_lib\uart.cpp:   const uint UART::GetState() const{
+..\my_lib\uart.cpp:   ^
+..\my_lib\uart.cpp(72): warning:  #815-D: type qualifier on return type is meaningless
+..\my_lib\uart.cpp:   const uint UART::GetIntStatus() const{
+..\my_lib\uart.cpp:   ^
+..\my_lib\uart.cpp(89): warning:  #1-D: last line of file ends without a newline
+..\my_lib\uart.cpp:                                                                                                              
+..\my_lib\uart.cpp:                                                                                                              ^
+..\my_lib\uart.cpp: ..\my_lib\uart.cpp: 6 warnings, 0 errors
+compiling vic.cpp...
+linking...
+Program Size: Code=2564 RO-data=64 RW-data=48 ZI-data=1400  
+FromELF: creating hex file...
+".\obj\tst.axf" - 0 Error(s), 9 Warning(s).
+Build target 'Target 1'
+compiling main.cpp...
+./../my_lib/uart.h(22): warning:  #375-D: declaration requires a typedef name
+./../my_lib/uart.h:   };
+./../my_lib/uart.h:    ^
+./../my_lib/uart.h(43): warning:  #815-D: type qualifier on return type is meaningless
+./../my_lib/uart.h:             const uint GetState() const;
+./../my_lib/uart.h:             ^
+./../my_lib/uart.h(44): warning:  #815-D: type qualifier on return type is meaningless
+./../my_lib/uart.h:             const uint GetIntStatus() const;
+./../my_lib/uart.h:             ^
+./../my_lib/uart.h: main.cpp: 3 warnings, 0 errors
+linking...
+Program Size: Code=2620 RO-data=64 RW-data=48 ZI-data=1400  
+FromELF: creating hex file...
+".\obj\tst.axf" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+assembling LPC2300.s...
+compiling main.cpp...
+./../my_lib/uart.h(22): warning:  #375-D: declaration requires a typedef name
+./../my_lib/uart.h:   };
+./../my_lib/uart.h:    ^
+./../my_lib/uart.h(43): warning:  #815-D: type qualifier on return type is meaningless
+./../my_lib/uart.h:             const uint GetState() const;
+./../my_lib/uart.h:             ^
+./../my_lib/uart.h(44): warning:  #815-D: type qualifier on return type is meaningless
+./../my_lib/uart.h:             const uint GetIntStatus() const;
+./../my_lib/uart.h:             ^
+main.cpp(22): error:  #291: no default constructor exists for class "UART"
+main.cpp:   UART* uart2,uart1;
+main.cpp:               ^
+main.cpp(41): error:  #349: no operator "=" matches these operands
+main.cpp:             operand types are: UART = UART *
+main.cpp:       uart1=UART::Get(1);
+main.cpp:            ^
+main.cpp(42): error:  #44: expression must have pointer type
+main.cpp:       uart1->Init(&u_opt);
+main.cpp:       ^
+main.cpp(73): error:  #44: expression must have pointer type
+main.cpp:       uart1->Read(buf,8);
+main.cpp:       ^
+main.cpp: main.cpp: 3 warnings, 4 errors
+Target not created
+Build target 'Target 1'
+compiling main.cpp...
+./../my_lib/uart.h(22): warning:  #375-D: declaration requires a typedef name
+./../my_lib/uart.h:   };
+./../my_lib/uart.h:    ^
+./../my_lib/uart.h(43): warning:  #815-D: type qualifier on return type is meaningless
+./../my_lib/uart.h:             const uint GetState() const;
+./../my_lib/uart.h:             ^
+./../my_lib/uart.h(44): warning:  #815-D: type qualifier on return type is meaningless
+./../my_lib/uart.h:             const uint GetIntStatus() const;
+./../my_lib/uart.h:             ^
+./../my_lib/uart.h: main.cpp: 3 warnings, 0 errors
+linking...
+.\obj\tst.axf: Error: L6218E: Undefined symbol CalcCRC16(unsigned char*, unsigned short) (referred from main.o).
+.\obj\tst.axf: Not enough information to list image symbols.
+.\obj\tst.axf: Finished: 1 information, 0 warning and 1 error messages.
+Target not created
