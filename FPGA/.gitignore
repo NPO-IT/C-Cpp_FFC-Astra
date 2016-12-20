@@ -8,8 +8,6 @@
 /project.tan.rpt
 /project_nativelink_simulation.rpt
 /serv_req_info.txt
-*.pcb
-*.sch
 *.cnf
 *.DLS
 *.qws

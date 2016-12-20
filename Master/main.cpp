@@ -266,8 +266,7 @@ int main(){
 
 	//Указываем жестко режимы опроса каналов ЯТП
 	//ЯТП БСУ ФТК
-	for (int i=0;i<=19;i++) TempModeTable[i]=1;				//4-х проводная схема 0-240 Ом
-	for (int i=20;i<=29;i++) TempModeTable[i]=4;			//Термопары
+	for (int i=0;i<=29;i++) TempModeTable[i]=1;				//4-х проводная схема 0-240 Ом
 	TempModeTable[30]=5;									//Калибровка максимум
 	TempModeTable[31]=6;									//Калибровка минимум
 
@@ -1301,7 +1300,7 @@ void UART0Handler() __irq				//Вызывается, если пришли данные от внешнего устрой
 		{
 			for (int i=0;i<4;i++) buff2[i+8]=buff[i];
 			NumberPacket3=0;							
-			if (CalcCRC8(buff2,11)==buff2[11])
+			if (CalcCRC8(buff2,11)==buff2[11]){
 				if ((buff2[1]&2)!=0) 
 				{					
 					FIO0SET|=1<<26;				
@@ -1322,6 +1321,7 @@ void UART0Handler() __irq				//Вызывается, если пришли данные от внешнего устрой
 					DIR2[CLR]|=DIR2_VAL;			//Сбрасываем ногу DIR1
 					FIO0CLR|=1<<26;
 				}	
+			}
 		}
 	}		
 	else if ((buff[0]==27)&&(NumberPacket2==0))										 //Если пришел пакет на изменение типов опроса каналов ЯТП(размер 68 байт)

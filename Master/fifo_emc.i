@@ -37,7 +37,7 @@ typedef unsigned int   uint;
 	
 	uint ReadWriteFifo(const uint& input);
 #line 3 "fifo_emc.cpp"
-#line 1 "C:\\Program Files\\KEIL\\ARM\\Inc\\Philips\\lpc23xx.h"
+#line 1 "C:\\Keil\\ARM\\Inc\\Philips\\lpc23xx.h"
 
 
 
@@ -62,48 +62,48 @@ typedef unsigned int   uint;
 
 
  
-#line 36 "C:\\Program Files\\KEIL\\ARM\\Inc\\Philips\\lpc23xx.h"
+#line 36 "C:\\Keil\\ARM\\Inc\\Philips\\lpc23xx.h"
 
-#line 69 "C:\\Program Files\\KEIL\\ARM\\Inc\\Philips\\lpc23xx.h"
-
-
- 
-#line 104 "C:\\Program Files\\KEIL\\ARM\\Inc\\Philips\\lpc23xx.h"
-
- 
-#line 138 "C:\\Program Files\\KEIL\\ARM\\Inc\\Philips\\lpc23xx.h"
-
-
+#line 69 "C:\\Keil\\ARM\\Inc\\Philips\\lpc23xx.h"
 
 
  
-#line 155 "C:\\Program Files\\KEIL\\ARM\\Inc\\Philips\\lpc23xx.h"
-
-#line 166 "C:\\Program Files\\KEIL\\ARM\\Inc\\Philips\\lpc23xx.h"
+#line 104 "C:\\Keil\\ARM\\Inc\\Philips\\lpc23xx.h"
 
  
-#line 177 "C:\\Program Files\\KEIL\\ARM\\Inc\\Philips\\lpc23xx.h"
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
+#line 138 "C:\\Keil\\ARM\\Inc\\Philips\\lpc23xx.h"
 
 
 
 
  
-#line 203 "C:\\Program Files\\KEIL\\ARM\\Inc\\Philips\\lpc23xx.h"
+#line 155 "C:\\Keil\\ARM\\Inc\\Philips\\lpc23xx.h"
+
+#line 166 "C:\\Keil\\ARM\\Inc\\Philips\\lpc23xx.h"
+
+ 
+#line 177 "C:\\Keil\\ARM\\Inc\\Philips\\lpc23xx.h"
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+#line 203 "C:\\Keil\\ARM\\Inc\\Philips\\lpc23xx.h"
 
 
 
@@ -376,78 +376,78 @@ typedef unsigned int   uint;
 
 
  
-#line 489 "C:\\Program Files\\KEIL\\ARM\\Inc\\Philips\\lpc23xx.h"
+#line 489 "C:\\Keil\\ARM\\Inc\\Philips\\lpc23xx.h"
 
-#line 498 "C:\\Program Files\\KEIL\\ARM\\Inc\\Philips\\lpc23xx.h"
+#line 498 "C:\\Keil\\ARM\\Inc\\Philips\\lpc23xx.h"
 
  
-#line 507 "C:\\Program Files\\KEIL\\ARM\\Inc\\Philips\\lpc23xx.h"
+#line 507 "C:\\Keil\\ARM\\Inc\\Philips\\lpc23xx.h"
 
-#line 515 "C:\\Program Files\\KEIL\\ARM\\Inc\\Philips\\lpc23xx.h"
+#line 515 "C:\\Keil\\ARM\\Inc\\Philips\\lpc23xx.h"
 
-#line 523 "C:\\Program Files\\KEIL\\ARM\\Inc\\Philips\\lpc23xx.h"
+#line 523 "C:\\Keil\\ARM\\Inc\\Philips\\lpc23xx.h"
 
-#line 531 "C:\\Program Files\\KEIL\\ARM\\Inc\\Philips\\lpc23xx.h"
+#line 531 "C:\\Keil\\ARM\\Inc\\Philips\\lpc23xx.h"
 
 
 
 	
  
-#line 554 "C:\\Program Files\\KEIL\\ARM\\Inc\\Philips\\lpc23xx.h"
+#line 554 "C:\\Keil\\ARM\\Inc\\Philips\\lpc23xx.h"
 
  
-#line 574 "C:\\Program Files\\KEIL\\ARM\\Inc\\Philips\\lpc23xx.h"
+#line 574 "C:\\Keil\\ARM\\Inc\\Philips\\lpc23xx.h"
 
  
-#line 594 "C:\\Program Files\\KEIL\\ARM\\Inc\\Philips\\lpc23xx.h"
+#line 594 "C:\\Keil\\ARM\\Inc\\Philips\\lpc23xx.h"
 
  
-#line 614 "C:\\Program Files\\KEIL\\ARM\\Inc\\Philips\\lpc23xx.h"
-
-
- 
-#line 639 "C:\\Program Files\\KEIL\\ARM\\Inc\\Philips\\lpc23xx.h"
-
-#line 662 "C:\\Program Files\\KEIL\\ARM\\Inc\\Philips\\lpc23xx.h"
+#line 614 "C:\\Keil\\ARM\\Inc\\Philips\\lpc23xx.h"
 
 
  
-#line 680 "C:\\Program Files\\KEIL\\ARM\\Inc\\Philips\\lpc23xx.h"
+#line 639 "C:\\Keil\\ARM\\Inc\\Philips\\lpc23xx.h"
 
- 
-#line 698 "C:\\Program Files\\KEIL\\ARM\\Inc\\Philips\\lpc23xx.h"
-
- 
-#line 715 "C:\\Program Files\\KEIL\\ARM\\Inc\\Philips\\lpc23xx.h"
-
- 
-#line 732 "C:\\Program Files\\KEIL\\ARM\\Inc\\Philips\\lpc23xx.h"
-
- 
-#line 742 "C:\\Program Files\\KEIL\\ARM\\Inc\\Philips\\lpc23xx.h"
-
- 
-#line 752 "C:\\Program Files\\KEIL\\ARM\\Inc\\Philips\\lpc23xx.h"
-
- 
-#line 762 "C:\\Program Files\\KEIL\\ARM\\Inc\\Philips\\lpc23xx.h"
-
- 
-#line 770 "C:\\Program Files\\KEIL\\ARM\\Inc\\Philips\\lpc23xx.h"
-
- 
-#line 783 "C:\\Program Files\\KEIL\\ARM\\Inc\\Philips\\lpc23xx.h"
-
- 
-#line 796 "C:\\Program Files\\KEIL\\ARM\\Inc\\Philips\\lpc23xx.h"
+#line 662 "C:\\Keil\\ARM\\Inc\\Philips\\lpc23xx.h"
 
 
  
-#line 827 "C:\\Program Files\\KEIL\\ARM\\Inc\\Philips\\lpc23xx.h"
+#line 680 "C:\\Keil\\ARM\\Inc\\Philips\\lpc23xx.h"
+
+ 
+#line 698 "C:\\Keil\\ARM\\Inc\\Philips\\lpc23xx.h"
+
+ 
+#line 715 "C:\\Keil\\ARM\\Inc\\Philips\\lpc23xx.h"
+
+ 
+#line 732 "C:\\Keil\\ARM\\Inc\\Philips\\lpc23xx.h"
+
+ 
+#line 742 "C:\\Keil\\ARM\\Inc\\Philips\\lpc23xx.h"
+
+ 
+#line 752 "C:\\Keil\\ARM\\Inc\\Philips\\lpc23xx.h"
+
+ 
+#line 762 "C:\\Keil\\ARM\\Inc\\Philips\\lpc23xx.h"
+
+ 
+#line 770 "C:\\Keil\\ARM\\Inc\\Philips\\lpc23xx.h"
+
+ 
+#line 783 "C:\\Keil\\ARM\\Inc\\Philips\\lpc23xx.h"
+
+ 
+#line 796 "C:\\Keil\\ARM\\Inc\\Philips\\lpc23xx.h"
 
 
  
-#line 843 "C:\\Program Files\\KEIL\\ARM\\Inc\\Philips\\lpc23xx.h"
+#line 827 "C:\\Keil\\ARM\\Inc\\Philips\\lpc23xx.h"
+
+
+ 
+#line 843 "C:\\Keil\\ARM\\Inc\\Philips\\lpc23xx.h"
 
 
  
@@ -456,45 +456,37 @@ typedef unsigned int   uint;
 
 
  
-#line 857 "C:\\Program Files\\KEIL\\ARM\\Inc\\Philips\\lpc23xx.h"
+#line 857 "C:\\Keil\\ARM\\Inc\\Philips\\lpc23xx.h"
 
  
-#line 868 "C:\\Program Files\\KEIL\\ARM\\Inc\\Philips\\lpc23xx.h"
+#line 868 "C:\\Keil\\ARM\\Inc\\Philips\\lpc23xx.h"
 
 
 
 
 
 
-#line 887 "C:\\Program Files\\KEIL\\ARM\\Inc\\Philips\\lpc23xx.h"
+#line 887 "C:\\Keil\\ARM\\Inc\\Philips\\lpc23xx.h"
   	
-#line 900 "C:\\Program Files\\KEIL\\ARM\\Inc\\Philips\\lpc23xx.h"
+#line 900 "C:\\Keil\\ARM\\Inc\\Philips\\lpc23xx.h"
 
-#line 914 "C:\\Program Files\\KEIL\\ARM\\Inc\\Philips\\lpc23xx.h"
+#line 914 "C:\\Keil\\ARM\\Inc\\Philips\\lpc23xx.h"
   	
-#line 927 "C:\\Program Files\\KEIL\\ARM\\Inc\\Philips\\lpc23xx.h"
+#line 927 "C:\\Keil\\ARM\\Inc\\Philips\\lpc23xx.h"
 
 
  
-#line 950 "C:\\Program Files\\KEIL\\ARM\\Inc\\Philips\\lpc23xx.h"
+#line 950 "C:\\Keil\\ARM\\Inc\\Philips\\lpc23xx.h"
 
 
  
-#line 964 "C:\\Program Files\\KEIL\\ARM\\Inc\\Philips\\lpc23xx.h"
+#line 964 "C:\\Keil\\ARM\\Inc\\Philips\\lpc23xx.h"
 
 
  
-#line 982 "C:\\Program Files\\KEIL\\ARM\\Inc\\Philips\\lpc23xx.h"
+#line 982 "C:\\Keil\\ARM\\Inc\\Philips\\lpc23xx.h"
 
  
-
-
-
-
-
-
- 
-
 
 
 
@@ -507,8 +499,9 @@ typedef unsigned int   uint;
 
 
 
- 
 
+
+ 
 
 
 
@@ -526,6 +519,13 @@ typedef unsigned int   uint;
 
 
 
+
+
+ 
+
+
+
+
  
 
 
@@ -538,15 +538,15 @@ typedef unsigned int   uint;
 
 
  
-#line 1053 "C:\\Program Files\\KEIL\\ARM\\Inc\\Philips\\lpc23xx.h"
+#line 1053 "C:\\Keil\\ARM\\Inc\\Philips\\lpc23xx.h"
 
  
-#line 1079 "C:\\Program Files\\KEIL\\ARM\\Inc\\Philips\\lpc23xx.h"
+#line 1079 "C:\\Keil\\ARM\\Inc\\Philips\\lpc23xx.h"
 
  
-#line 1087 "C:\\Program Files\\KEIL\\ARM\\Inc\\Philips\\lpc23xx.h"
+#line 1087 "C:\\Keil\\ARM\\Inc\\Philips\\lpc23xx.h"
 
-#line 1095 "C:\\Program Files\\KEIL\\ARM\\Inc\\Philips\\lpc23xx.h"
+#line 1095 "C:\\Keil\\ARM\\Inc\\Philips\\lpc23xx.h"
 
 
 
@@ -554,13 +554,13 @@ typedef unsigned int   uint;
 
 
  
-#line 1117 "C:\\Program Files\\KEIL\\ARM\\Inc\\Philips\\lpc23xx.h"
+#line 1117 "C:\\Keil\\ARM\\Inc\\Philips\\lpc23xx.h"
 
 
 
 
 
-#line 1134 "C:\\Program Files\\KEIL\\ARM\\Inc\\Philips\\lpc23xx.h"
+#line 1134 "C:\\Keil\\ARM\\Inc\\Philips\\lpc23xx.h"
 
 
 
