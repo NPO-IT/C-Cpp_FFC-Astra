@@ -2873,8 +2873,7 @@ int main(){
 
 	
 	
-	for (int i=0;i<=19;i++) TempModeTable[i]=1;				
-	for (int i=20;i<=29;i++) TempModeTable[i]=4;			
+	for (int i=0;i<=29;i++) TempModeTable[i]=1;				
 	TempModeTable[30]=5;									
 	TempModeTable[31]=6;									
 
@@ -3560,7 +3559,7 @@ LKF3counter++;
 static const byte PROG_POLL1[]={
 	0,7,9,10,
 	17,19,20,27,30,
-	37,40,50,60,67,77
+	37,40,50,60,67,77,70	
 };
 
 
@@ -3604,6 +3603,7 @@ if (TestYALKFlag==0)
 			FRAME[FRM_CNT][PROG_POLL1[12]]=HASH6BIT[((buf[0]>>6)&0x3)|((buf[1]>>4)&0xC)|((buf[2]>>2)&0x30)];
 			FRAME[FRM_CNT][PROG_POLL1[13]]=HASH6BIT[((buf[3]>>6)&0x3)|((buf[4]>>4)&0xC)|((buf[5]>>2)&0x30)];
 			FRAME[FRM_CNT][PROG_POLL1[14]]=HASH6BIT[((buf[6]>>6)&0x3)|((buf[7]>>4)&0xC)|((buf[8]>>2)&0x30)];
+			FRAME[FRM_CNT][PROG_POLL1[15]]=HASH6BIT[((buf[9]>>6)&0x3)|((buf[10]>>4)&0xC)|((buf[11]>>2)&0x30)];
 			
 			if(clcpolltable[0][clc_poll_count]. lkf<254){
 					ushort tmp_val=(buf[12]|(buf[13]<<8));
@@ -3869,7 +3869,7 @@ void UART0Handler() __irq
 		{
 			for (int i=0;i<4;i++) buff2[i+8]=buff[i];
 			NumberPacket=0;							
-			if (CalcCRC8(buff2,11)==buff2[11])
+			if (CalcCRC8(buff2,11)==buff2[11]){
 				if ((buff2[1]&2)!=0) 
 				{					
 					(*(volatile unsigned long *)(0x3FFFC000 + 0x18))|=1<<26;				
@@ -3890,6 +3890,7 @@ void UART0Handler() __irq
 					DIR2[CLR]|=DIR2_VAL;			
 					(*(volatile unsigned long *)(0x3FFFC000 + 0x1C))|=1<<26;
 				}	
+			}
 		}
 	}
 	else if ((buff[0]==176)&&(NumberPacket3==0))					

@@ -952,7 +952,7 @@ LKF3counter++;
 static const byte PROG_POLL1[]={
 	0,7,9,10,
 	17,19,20,27,30,
-	37,40,50,60,67,77
+	37,40,50,60,67,77,70	//70 = 31 channel
 };
 
 //обработчик прерывания UART
@@ -996,6 +996,7 @@ if (TestYALKFlag==0)
 			CurrentFrame(PROG_POLL1[12],((buf[0]>>6)&0x3)|((buf[1]>>4)&0xC)|((buf[2]>>2)&0x30));
 			CurrentFrame(PROG_POLL1[13],((buf[3]>>6)&0x3)|((buf[4]>>4)&0xC)|((buf[5]>>2)&0x30));
 			CurrentFrame(PROG_POLL1[14],((buf[6]>>6)&0x3)|((buf[7]>>4)&0xC)|((buf[8]>>2)&0x30));
+			CurrentFrame(PROG_POLL1[15],((buf[9]>>6)&0x3)|((buf[10]>>4)&0xC)|((buf[11]>>2)&0x30));
 			//запись медленных
 			if($CLCPoll(CLC96_1,lkf)<254){
 					ushort tmp_val=(buf[12]|(buf[13]<<8));
@@ -1261,7 +1262,7 @@ void UART0Handler() __irq				//Вызывается, если пришли данные от внешнего устрой
 		{
 			for (int i=0;i<4;i++) buff2[i+8]=buff[i];
 			NumberPacket=0;							
-			if (CalcCRC8(buff2,11)==buff2[11])
+			if (CalcCRC8(buff2,11)==buff2[11]){
 				if ((buff2[1]&2)!=0) 
 				{					
 					FIO0SET|=1<<26;				
@@ -1282,6 +1283,7 @@ void UART0Handler() __irq				//Вызывается, если пришли данные от внешнего устрой
 					DIR2[CLR]|=DIR2_VAL;			//Сбрасываем ногу DIR1
 					FIO0CLR|=1<<26;
 				}	
+			}
 		}
 	}
 	else if ((buff[0]==176)&&(NumberPacket3==0))					//Собираем пакет из 12 байт
