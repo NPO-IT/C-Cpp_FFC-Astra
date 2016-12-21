@@ -2994,6 +2994,7 @@ for (i=0;i<50;i++);
 DIR1[CLR]|=DIR1_VAL;
 for (i=0;i<1500;i++);
 if (uart1->Read(buf,14)) MIN_SCALE1=(buf[12]|(buf[13]<<8));
+MIN_SCALE1=575;
 
 
 DIR2[SET]|=DIR2_VAL;
@@ -3020,6 +3021,7 @@ for (i=0;i<50;i++);
 DIR2[CLR]|=DIR2_VAL;
 for (i=0;i<1500;i++);
 if (uart2->Read(buf,14)) MIN_SCALE2=(buf[12]|(buf[13]<<8));  
+MIN_SCALE2=575;
 
 VIC::InstallIRQ(VIC::UART1_INT,(void*)UART1Handler,2);						
 VIC::InstallIRQ(VIC::UART2_INT,(void*)UART2Handler,2);						
@@ -3623,6 +3625,7 @@ if (TestYALKFlag==0)
 			else if (clcpolltable[0][clc_poll_count]. lkf==254)					   
 			{
 				if ((buf[13] & 0x02) == 0) TheTime.TIME_SEC = 0;	   
+				MIN_SCALE1=(buf[12]|(buf[13]<<8))&511;
 			}
 		 if (clcpolltable[0][clc_poll_count]. chan==36)					  
 			{

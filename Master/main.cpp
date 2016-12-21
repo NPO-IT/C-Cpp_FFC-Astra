@@ -387,6 +387,7 @@ for (i=0;i<DELAY485;i++);
 DIR1[CLR]|=DIR1_VAL;
 for (i=0;i<1500;i++);
 if (uart1->Read(buf,14)) MIN_SCALE1=(buf[12]|(buf[13]<<8));
+MIN_SCALE1=575;
 
 //Считываем код 0 Вольт из ЯЛК-2(УЛК)
 DIR2[SET]|=DIR2_VAL;
@@ -413,6 +414,7 @@ for (i=0;i<DELAY485;i++);
 DIR2[CLR]|=DIR2_VAL;
 for (i=0;i<1500;i++);
 if (uart2->Read(buf,14)) MIN_SCALE2=(buf[12]|(buf[13]<<8));  
+MIN_SCALE2=575;
 
 VIC::InstallIRQ(VIC::UART1_INT,(void*)UART1Handler,2);						//Прерывание по приему 14 байт от ячейки ЯЛК
 VIC::InstallIRQ(VIC::UART2_INT,(void*)UART2Handler,2);						//Прерывание по приему 14 байт от УЛК и температурной ячейки
@@ -1016,6 +1018,7 @@ if (TestYALKFlag==0)
 			else if ($CLCPoll(CLC96_1,lkf)==254)					   //Проверка поступления на 1-ый кк 0-го ЛКФ команды НОВ
 			{
 				if ((buf[13] & 0x02) == 0) TheTime.TIME_SEC = 0;	   //Обнуление времени по команде НОВ
+				MIN_SCALE1=(buf[12]|(buf[13]<<8))&511;
 			}
 		 if ($CLCPoll(CLC96_1,chan)==36)					  //Переключение входа 52-го канала ячейки ЯЛК для смены БУС1ЗУ и БУС2 ///ТЕСТ БУС 2 УБИРАЕМ ПРОВЕРКУ, ФЛАГ ВЫСТАВЛЕН НА 1//
 			{
