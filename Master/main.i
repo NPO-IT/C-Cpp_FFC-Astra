@@ -1966,7 +1966,7 @@ struct CLCPoll{
 42,80,82,23,1,55,1,
 42,81,82,227,0,28,1,
 42,80,80,117,1,28,1,			  
-42,81,33,72,1,13,1,	   
+42,80,33,188,1,13,1,	   
 42,80,74,237,255,255,0,	   
 42,80,29,4,254,255,0,	   
 42,80,80,117,0,19,2,			  
@@ -2046,7 +2046,7 @@ struct CLCPoll{
 42,80,82,23,1,55,1,
 42,81,82,227,0,28,1,
 42,80,80,117,1,28,1,			  
-42,81,33,72,1,13,1,   	    
+42,80,33,188,1,13,1,   	    
 42,80,74,237,255,255,0,	   
 42,80,29,4,254,255,0,					
 42,80,80,117,0,19,2,			  
@@ -3561,7 +3561,7 @@ LKF3counter++;
 static const byte PROG_POLL1[]={
 	0,7,9,10,
 	17,19,20,27,30,
-	37,40,50,60,67,77,70	
+	37,40,50,60,67,77,70
 };
 
 
@@ -3872,7 +3872,7 @@ void UART0Handler() __irq
 		{
 			for (int i=0;i<4;i++) buff2[i+8]=buff[i];
 			NumberPacket=0;							
-			if (CalcCRC8(buff2,11)==buff2[11]){
+			if (CalcCRC8(buff2,11)==buff2[11])
 				if ((buff2[1]&2)!=0) 
 				{					
 					(*(volatile unsigned long *)(0x3FFFC000 + 0x18))|=1<<26;				
@@ -3893,7 +3893,6 @@ void UART0Handler() __irq
 					DIR2[CLR]|=DIR2_VAL;			
 					(*(volatile unsigned long *)(0x3FFFC000 + 0x1C))|=1<<26;
 				}	
-			}
 		}
 	}
 	else if ((buff[0]==176)&&(NumberPacket3==0))					
@@ -3912,7 +3911,7 @@ void UART0Handler() __irq
 		{
 			for (int i=0;i<4;i++) buff2[i+8]=buff[i];
 			NumberPacket3=0;							
-			if (CalcCRC8(buff2,11)==buff2[11]){
+			if (CalcCRC8(buff2,11)==buff2[11])
 				if ((buff2[1]&2)!=0) 
 				{					
 					(*(volatile unsigned long *)(0x3FFFC000 + 0x18))|=1<<26;				
@@ -3933,7 +3932,6 @@ void UART0Handler() __irq
 					DIR2[CLR]|=DIR2_VAL;			
 					(*(volatile unsigned long *)(0x3FFFC000 + 0x1C))|=1<<26;
 				}	
-			}
 		}
 	}		
 	else if ((buff[0]==27)&&(NumberPacket2==0))										 

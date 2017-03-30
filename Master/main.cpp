@@ -954,7 +954,7 @@ LKF3counter++;
 static const byte PROG_POLL1[]={
 	0,7,9,10,
 	17,19,20,27,30,
-	37,40,50,60,67,77,70	//70 = 31 channel
+	37,40,50,60,67,77,70
 };
 
 //обработчик прерывания UART
@@ -1265,7 +1265,7 @@ void UART0Handler() __irq				//Вызывается, если пришли данные от внешнего устрой
 		{
 			for (int i=0;i<4;i++) buff2[i+8]=buff[i];
 			NumberPacket=0;							
-			if (CalcCRC8(buff2,11)==buff2[11]){
+			if (CalcCRC8(buff2,11)==buff2[11])
 				if ((buff2[1]&2)!=0) 
 				{					
 					FIO0SET|=1<<26;				
@@ -1286,7 +1286,6 @@ void UART0Handler() __irq				//Вызывается, если пришли данные от внешнего устрой
 					DIR2[CLR]|=DIR2_VAL;			//Сбрасываем ногу DIR1
 					FIO0CLR|=1<<26;
 				}	
-			}
 		}
 	}
 	else if ((buff[0]==176)&&(NumberPacket3==0))					//Собираем пакет из 12 байт
@@ -1305,7 +1304,7 @@ void UART0Handler() __irq				//Вызывается, если пришли данные от внешнего устрой
 		{
 			for (int i=0;i<4;i++) buff2[i+8]=buff[i];
 			NumberPacket3=0;							
-			if (CalcCRC8(buff2,11)==buff2[11]){
+			if (CalcCRC8(buff2,11)==buff2[11])
 				if ((buff2[1]&2)!=0) 
 				{					
 					FIO0SET|=1<<26;				
@@ -1326,7 +1325,6 @@ void UART0Handler() __irq				//Вызывается, если пришли данные от внешнего устрой
 					DIR2[CLR]|=DIR2_VAL;			//Сбрасываем ногу DIR1
 					FIO0CLR|=1<<26;
 				}	
-			}
 		}
 	}		
 	else if ((buff[0]==27)&&(NumberPacket2==0))										 //Если пришел пакет на изменение типов опроса каналов ЯТП(размер 68 байт)
